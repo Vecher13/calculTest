@@ -18,9 +18,31 @@ class calculTestTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    
+    func testAdd(){
+        let calculator = ViewController()
+       let res = calculator.addCulc(first: 5, second: 7)
+        XCTAssertEqual(res, 12)
+    }
+    func testSubstract(){
+        let calculator = ViewController()
+        let res = calculator.substract(first: 13, second: 3)
+        XCTAssertEqual(res, 10)
+    }
+    func testMulti(){
+        let calculator = ViewController()
+        let res = calculator.multiply(first: 3, second: 7)
+        XCTAssertEqual(res, 21)
+    }
+    func testDivide(){
+        let calculator = ViewController()
+        let res = calculator.divide(first: 10, second: 2)
+        XCTAssertEqual(res, 5)
+    }
+    
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+       
+        
     }
 
     func testPerformanceExample() throws {
